@@ -1,0 +1,95 @@
+$primary: #223a47;
+$secondary: #f27527;
+
+body {
+  // font-family: "Fredericka the Great", serif;
+  // font-family: "Source Code Pro", sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+#wrapper-navbar {
+  .top-header-holder {
+    height: 230px;
+    background-color: #f1f1f1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .container {
+      .logo-holder {
+        display: block;
+        .logo {
+        }
+      }
+      .contact-holder {
+        font-size: 16px;
+        a {
+          color: $primary;
+          text-decoration: none;
+          display: inline-block;
+          margin-right: 1em;
+          margin-bottom: 0.5em;
+          .fa {
+            color: $secondary;
+          }
+        }
+      }
+      .reservation-btn {
+        font-family: "Fredericka the Great";
+        font-size: 38px;
+        border: 1px dotted $secondary;
+        display: inline-block;
+        padding: 0.25em 0.5em;
+        border-radius: 0.25em;
+        transition: 0.25s ease all;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          background: $secondary;
+          color: white;
+        }
+      }
+      .socaial-media-holder {
+        font-size: 50px;
+        a {
+          color: $secondary;
+          text-decoration: none;
+          &:hover {
+            color: darken($secondary, 10%);
+          }
+        }
+      }
+    }
+  }
+  margin-bottom: -350px;
+
+  #main-nav {
+    border-top: 1px solid rgba(#5da0aa, 0.5);
+    border-bottom: 1px solid rgba(#5da0aa, 0.5);
+    padding: 0px;
+    ul {
+      flex: 1;
+      justify-content: space-between;
+      li {
+        a {
+          font-weight: 600;
+          font-size: 22px;
+          text-transform: uppercase;
+          color: #223a47;
+          padding: 1.5em 0.5em;
+        }
+        &.current_page_item {
+          a {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-banner {
+  height: 1080px;
+  background: #ccc;
+  background-image: url("/wp-content/themes/backbeach/img/home-banner.png");
+  background-size: cover;
+}
